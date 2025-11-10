@@ -91,7 +91,8 @@ class ProductResource extends Resource
 
                 TextColumn::make('category.name'),
                 TextColumn::make('brand.name'),
-
+                TextColumn::make('price'),
+                TextColumn::make('stock'),
                 IconColumn::make('is_popular')
                 ->boolean()
                 ->trueColor('success')
