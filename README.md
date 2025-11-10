@@ -27,6 +27,15 @@ docker exec-it crud-laravel php artisan storage:link
 ```bash
 docker exec-it crud-laravel php artisan migrate:fresh --seed
 ```
+- Akses aplikasi di http://127.0.0.1:8080/
+```bash
+http://127.0.0.1:8080/
+```
+- Login menggunakan email admin@gmail.com dengan password 123
+```bash
+Email : admin@gmail.com
+Password : 123
+```
 # Fitur Program
 ## CRUD User
 ![CRUD User](dokumentasi/user.png)
