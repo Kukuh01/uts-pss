@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('slug');
             $table->string('thumbnail');
             $table->text('about');
-            $table->boolean('is_popular');
+            $table->boolean('is_popular')
+            ->default(false);
             $table->unsignedBigInteger('price');
             $table->unsignedBigInteger('stock');
             $table->foreignId('brand_id')->constrained(
