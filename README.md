@@ -19,13 +19,21 @@ Aplikasi juga dilengkapi dengan fitur Upload Gambar, Seeder & Factory, Filament 
 ```bash
 docker compose up -d
 ```
+- Install dependensi laravel
+```bash
+docker exec -it crud-laravel composer install
+```
+- Install dependensi NPM
+```bash
+docker exec -it crud-laravel npm install
+```
 - Aktifkan storage link
 ```bash
-docker exec-it crud-laravel php artisan storage:link
+docker exec -it crud-laravel php artisan storage:link
 ```
 - Migrate dan seeding database
 ```bash
-docker exec-it crud-laravel php artisan migrate:fresh --seed
+docker exec -it crud-laravel php artisan migrate:fresh --seed
 ```
 - Akses aplikasi di http://127.0.0.1:8080/
 ```bash
