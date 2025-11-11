@@ -23,10 +23,6 @@ docker compose up -d
 ```bash
 docker exec -it crud-laravel composer install
 ```
-- Install dependensi NPM
-```bash
-docker exec -it crud-laravel npm install
-```
 - Aktifkan storage link
 ```bash
 docker exec -it crud-laravel php artisan storage:link
